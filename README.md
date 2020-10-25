@@ -5,6 +5,7 @@ xv_coding_challenge_ryane_c
 * setup cloudfront trigger for lambda
 * Okta integration
 * CI/CD 
+* fix cloudfront access permission
 
 ## Requirements
 
