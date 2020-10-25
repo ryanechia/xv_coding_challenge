@@ -1,0 +1,5 @@
+provider "okta" {
+  org_name  = "outlook-org-2015852"
+  base_url  = "outlook-rc-xv-challenge.okta.com"
+  api_token = ""
+}
