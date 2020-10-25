@@ -2,15 +2,17 @@
 xv_coding_challenge_ryane_c
 
 ## todo:
-* setup cloudfront trigger for lambda
 * Okta integration
 * CI/CD 
 * fix cloudfront access permission
 
+## nice to haves for a coding challenge
+* https support
+
 ## Requirements
 
-aws-cli 2.0.48
-terraform 11.14
+* aws-cli 2.0.48
+* terraform 11.14
 
 ## Setting up
 
