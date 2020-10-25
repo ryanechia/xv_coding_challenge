@@ -1,6 +1,10 @@
 # xv_coding_challenge_ryane_c
 xv_coding_challenge_ryane_c
 
+## todo:
+* setup cloudfront trigger for lambda
+* Okta integration
+* CI/CD 
 
 ## Requirements
 
