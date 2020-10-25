@@ -68,6 +68,11 @@ resource "aws_cloudfront_distribution" "cloudfront" {
       }
     }
 
+    lambda_function_association {
+      event_type = "origin-request"
+      lambda_arn = module.lambda_edge_function.lambda_function_qualified_arn
+    }
+
     default_ttl            = 0
     max_ttl                = 0
     min_ttl                = 0
