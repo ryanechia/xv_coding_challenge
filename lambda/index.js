@@ -20,7 +20,7 @@ exports.handler = (event, context, callback) => {
                     status: '200',
                     statusDescription: 'OK',
                     headers: noCacheHeaders,//cachedHeaders,
-                    body: 'Hello, logs!';
+                    body: 'Hello, logs!'
                 };
     callback(null, response);
 }
