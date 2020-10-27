@@ -12,9 +12,13 @@
     "pull-state:production": "cd terraform && terraform init && terraform workspace select production && terraform state pull",
     "get-url:staging": "cd terraform && terraform workspace select staging && terraform output cloudfront_url",
     "get-url:production": "cd terraform && terraform workspace select production && terraform output cloudfront_url",
-    "okta-key": "cd terraform && export OKTA=`terraform output okta_api_key`"
+    "generate-okta-app": "cd terraform && export OKTA=`terraform output okta_api_key` && OKTA_API_KEY=$OKTA node ../scripts/generate-okta-app.js"
   },
   "author": "Ryane Chia",
   "license": "MIT",
-  "repository": "github:xvpn-coding-challenges/xv_coding_challenge_ryane_c"
+  "repository": "github:xvpn-coding-challenges/xv_coding_challenge_ryane_c",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "node": "^15.0.1"
+  }
 }
