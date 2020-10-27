@@ -31,6 +31,8 @@ console and is retrievable through `yarn get-url:[staging|production]`
 ## Setting up
 Your static website code goes into the `src` folder. Don't forget to include a `index.html`!
 
+Step 1: run `yarn install`
+ 
 You will need to initialise a new project's infrastructure with
 ```
 yarn infra:init
