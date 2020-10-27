@@ -3,8 +3,10 @@ xv_coding_challenge_ryane_c
 
 ## todo:
 * Okta integration
-* CI/CD 
 * fix cloudfront access permission
+
+## caveats
+CI/CD won't work unless the `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` are provided in the repo environment settings
 
 ## nice to haves for a coding challenge
 * https support
@@ -25,3 +27,4 @@ xv_coding_challenge_ryane_c
 * finding a cloudfront + s3 terraform module - 30 mins
 * configuring cloudfront lambda + verifying - 45 mins
 * figuring out how to okta - 2 hrs
+* setting up github actions CI/CD - 20 mins
