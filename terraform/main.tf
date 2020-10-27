@@ -118,15 +118,6 @@ resource "aws_iam_role" "aws_iam_lambda_microsites3" {
 EOF
 }
 
-//resource "aws_lambda_function" "microsites3" {
-//  filename = "/tmp/lambda.zip"
-//  function_name = "microsites3"
-//  role = aws_iam_role.aws_iam_lambda_microsites3.arn
-//  handler = "lambda_function.lambda_handler"
-//  runtime = "nodejs12.x"
-//  timeout = "300"
-//}
-
 module "lambda_edge_function" {
   source = "dod-iac/lambda-edge-function/aws"
 
