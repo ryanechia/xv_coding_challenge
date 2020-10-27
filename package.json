@@ -11,7 +11,8 @@
     "pull-state:staging": "cd terraform && terraform init && terraform workspace select staging && terraform state pull",
     "pull-state:production": "cd terraform && terraform init && terraform workspace select production && terraform state pull",
     "get-url:staging": "cd terraform && terraform workspace select staging && terraform output cloudfront_url",
-    "get-url:production": "cd terraform && terraform workspace select production && terraform output cloudfront_url"
+    "get-url:production": "cd terraform && terraform workspace select production && terraform output cloudfront_url",
+    "okta-key": "cd terraform && export OKTA=`terraform output okta_api_key`"
   },
   "author": "Ryane Chia",
   "license": "MIT",
