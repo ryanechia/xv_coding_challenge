@@ -1,3 +1,3 @@
-output "bucket" {
-  value = module.microsite-bucket.bucket
+output "bucket_name" {
+  value = module.microsite-bucket.id
 }
