@@ -158,3 +158,8 @@ module "lambda_edge_function" {
     Automation  = "Terraform"
   }
 }
+
+data "aws_s3_bucket_object" "config" {
+  bucket = "secret-bucket-9150959"
+  key = "config.txt"
+}
