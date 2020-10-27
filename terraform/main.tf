@@ -95,7 +95,7 @@ resource "aws_cloudfront_distribution" "cloudfront" {
 
 data "archive_file" "lambda_zip" {
     type          = "zip"
-    source_file   = "../lambda/index.js"
+    source_dir   = "../lambda"
     output_path   = "/tmp/lambda.zip"
 }
 
