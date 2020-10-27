@@ -5,7 +5,7 @@ on:
       - 'staging'
       - 'production'
 jobs:
-  terraform:
+  deploy:
     name: terraform
     runs-on: ubuntu-latest
     timeout-minutes: 20
