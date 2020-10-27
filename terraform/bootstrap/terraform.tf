@@ -7,7 +7,7 @@ variable "namespace" {
 }
 
 provider "aws" {
-  region  = "${var.region}"
+  region  = var.region
   version = "1.25.0"
 }
 
@@ -18,7 +18,7 @@ provider "random" {
 module "config-state" {
   source              = "cloudowski/config-state/aws"
   version             = "0.2.0"
-  region              = "${var.region}"
+  region              = var.region
   bucket_name         = "${var.namespace}-tfstate"
   dynamodb_table_name = "${var.namespace}-tfstate"
 }
